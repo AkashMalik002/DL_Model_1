@@ -1,0 +1,41 @@
+# Ignore Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignore virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# Ignore IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore Streamlit cache
+.streamlit/cache/
+.streamlit/logs/
+
+# Ignore pytest
+.pytest_cache/
+.coverage
+
+# Ignore notebooks
+*.ipynb_checkpoints
+
+# Ignore data files (if any)
+data/
+*.csv
+*.xlsx
+
+# Keep requirements.txt and config.toml
+!requirements.txt
+!.streamlit/config.toml
