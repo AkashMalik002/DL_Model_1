@@ -1,7 +1,6 @@
-# Deep Learning Assignment - Modular Project Structure
+# Deep Learning Tasks - Modular Project Structure
 
-**Student ID:** adid1212  
-**Assignment:** Multi-Domain Deep Learning Implementation from Scratch  
+**Tasks:** Multi-Domain Deep Learning Implementation from Scratch  
 **Date:** 2026
 
 ---
@@ -17,36 +16,6 @@ This project implements a complete Deep Learning pipeline with **4 ML models fro
 - ✅ **NumPy-Only Implementation:** No TensorFlow, PyTorch, or sklearn ML modules
 - ✅ **Modular Architecture:** Separation of concerns with dedicated files for each function
 - ✅ **Comprehensive Analysis:** Situated learning insights for each domain
-
----
-
-## 🏗️ Project Structure
-
-```
-Ass_1/
-├── README.md                    ← You are here (Project documentation)
-├── main.py                      ← Main orchestrator (entry point)
-├── datasets.py                  ← Section 1: Dataset creation
-├── models.py                    ← Section 2: ML model implementations
-├── metrics.py                   ← Section 3: Evaluation metrics
-├── preprocessing.py             ← Section 4: Data preprocessing pipeline
-├── training.py                  ← Section 5: Model training
-├── visualization.py             ← Section 6-7: Loss/metrics visualization
-├── analysis.py                  ← Section 8: Situated learning analysis
-├── results.py                   ← Section 9: Final results summary
-└── adid1212_assignment1.ipynb   ← Original notebook (backup)
-```
-
----
-
-## 🔄 Execution Flow
-
-### **How to Run the Project:**
-
-```bash
-cd c:\Users\DELL\Documents\BiTs\Course\Sem3\DL\Ass_1
-python main.py
-```
 
 ---
 
@@ -335,10 +304,10 @@ Prints comprehensive domain-specific analysis:
 **File Called:** `results.py`
 **Main File:** `main.py` (lines 103-107)
 
-**Function:** `display_assignment_results(all_results)`
+**Function:** `display_Tasks_results(all_results)`
 
 **What Happens:**
-1. **Calls `get_assignment_results()`** - Aggregates all results into structured dictionary
+1. **Calls `get_Tasks_results()`** - Aggregates all results into structured dictionary
 2. **Prints Summary:**
    - Student ID: adid1212
    - Number of domains: 5
@@ -348,7 +317,6 @@ Prints comprehensive domain-specific analysis:
 
 **Key Outputs:**
 ```
-Student ID: adid1212
 Domains: 5
 Models Implemented: 4
   ✓ Logistic Regression (from scratch, NumPy)
@@ -368,7 +336,7 @@ Dataset Compliance:
   ... (similar for other domains)
 ```
 
-**Returns:** `assignment_results` dictionary containing:
+**Returns:** `Tasks_results` dictionary containing:
 ```python
 {
     'student_info': {...},
@@ -401,120 +369,6 @@ SUBMISSION EXPORT INSTRUCTIONS
 ✓ All 4 models implemented
 ... (checklist items)
 
-PROJECT STRUCTURE:
-├── main.py
-├── models.py
-├── metrics.py
-├── preprocessing.py
-├── datasets.py
-├── training.py
-├── visualization.py
-├── analysis.py
-├── results.py
-└── adid1212_assignment1.ipynb
-```
-
----
-
-## 📁 Module Dependency Graph
-
-```
-main.py (ORCHESTRATOR)
-  │
-  ├─→ datasets.py
-  │    └─→ create_domain_datasets()
-  │    └─→ display_dataset_summary()
-  │
-  ├─→ models.py
-  │    ├─→ LogisticRegression
-  │    ├─→ LinearRegression
-  │    ├─→ SoftmaxRegression
-  │    └─→ MultiLayerPerceptron
-  │
-  ├─→ metrics.py
-  │    └─→ EvaluationMetrics
-  │
-  ├─→ preprocessing.py
-  │    └─→ preprocess_data()
-  │
-  ├─→ training.py
-  │    ├─→ train_domain_models()
-  │    └─→ train_all_domains()
-  │         (calls: models.py, preprocessing.py, metrics.py)
-  │
-  ├─→ visualization.py
-  │    ├─→ visualize_training_loss()
-  │    ├─→ visualize_metrics_comparison()
-  │    └─→ print_comprehensive_metrics()
-  │
-  ├─→ analysis.py
-  │    ├─→ print_situated_learning_analysis()
-  │    └─→ get_domain_recommendations()
-  │
-  └─→ results.py
-       ├─→ get_assignment_results()
-       ├─→ display_assignment_results()
-       └─→ print_export_guide()
-```
-
----
-
-## 🚀 Step-by-Step Execution
-
-### **Step 1: Verify Environment**
-```bash
-python --version  # Should be 3.7+
-```
-
-### **Step 2: Install Dependencies**
-```bash
-pip install numpy pandas matplotlib seaborn scikit-learn
-```
-
-### **Step 3: Navigate to Project**
-```bash
-cd c:\Users\DELL\Documents\BiTs\Course\Sem3\DL\Ass_1
-```
-
-### **Step 4: Run Main Orchestrator**
-```bash
-python main.py
-```
-
-### **Step 5: Expected Output Timeline**
-1. **0-5 sec:** SECTION 0 - Imports complete
-2. **5-10 sec:** SECTION 1 - Datasets created and summarized
-3. **10-15 sec:** SECTION 2-4 - Models, metrics, preprocessing confirmed
-4. **15-60 sec:** SECTION 5 - Training all domains (4 models × 5 domains = 20 trainings)
-   - Each training: ~1-2 seconds
-5. **60-65 sec:** SECTION 6 - Loss visualization displayed
-6. **65-70 sec:** SECTION 7 - Metrics comparison displayed
-7. **70-75 sec:** SECTION 8 - Situated learning analysis printed
-8. **75-80 sec:** SECTION 9 - Final results summary
-9. **80-85 sec:** SECTION 10 - Export guide printed
-10. **85+ sec:** Completion message
-
-**Total Execution Time:** ~90 seconds
-
----
-
-## 📊 Key Metrics Collected
-
-For each domain and each model:
-- **Accuracy:** (TP + TN) / Total predictions
-- **Precision:** TP / (TP + FP)
-- **Recall:** TP / (TP + FN)
-- **F1-Score:** Harmonic mean of precision & recall
-- **Training Time:** Seconds to train
-
-**Improvement Metrics:**
-- Accuracy delta: MLP accuracy - Baseline accuracy
-- Precision delta
-- Recall delta
-- F1-Score delta
-- Time multiplier: MLP training time / Baseline training time
-
----
 
 ## 🔍 File-by-File Summary
 
@@ -571,18 +425,6 @@ Need to modify...
 - **Domain analysis** → Edit `analysis.py`
 - **Final output format** → Edit `results.py`
 - **Execution flow** → Edit `main.py`
-
----
-
-## 📞 Contact & Support
-
-For questions about the implementation:
-- Check the docstrings in each Python file
-- Review comments in main.py for section descriptions
-- See inline comments in model classes for mathematical details
-
-**Assignment ID:** adid1212  
-**Last Updated:** May 23, 2026
 
 ---
 
